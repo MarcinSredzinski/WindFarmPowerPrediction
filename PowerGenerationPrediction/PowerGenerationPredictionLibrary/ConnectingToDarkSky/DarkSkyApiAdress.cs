@@ -12,6 +12,7 @@ namespace PowerGenerationPredictionLibrary
         private long _apiKey;
         private string extend = "extend=hourly";
         string unit = "si";
+
         /// <summary>
         /// DarkSkyApiAdress object helps to generate ApiCall adress
         /// </summary>
@@ -27,7 +28,7 @@ namespace PowerGenerationPredictionLibrary
         /// <summary>
         /// Returns adress allowing to make a call to the api
         /// </summary>
-        /// <returns></returns>
+        /// <returns> </returns>
         public string GenerateAdress()
         {
             string latitudeWithCommas = _latitude.ToString().Replace(',', '.');
