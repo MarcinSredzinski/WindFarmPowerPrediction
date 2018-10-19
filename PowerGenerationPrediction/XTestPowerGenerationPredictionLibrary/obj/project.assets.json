@@ -5746,11 +5746,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\msred\\source\\repos\\PowerGenerationPrediction\\XTestPowerGenerationPredictionLibrary\\XTestPowerGenerationPredictionLibrary.csproj",
+      "projectUniqueName": "C:\\Users\\msred\\Documents\\GitHub\\WindFarmPowerPrediction\\PowerGenerationPrediction\\XTestPowerGenerationPredictionLibrary\\XTestPowerGenerationPredictionLibrary.csproj",
       "projectName": "XTestPowerGenerationPredictionLibrary",
-      "projectPath": "C:\\Users\\msred\\source\\repos\\PowerGenerationPrediction\\XTestPowerGenerationPredictionLibrary\\XTestPowerGenerationPredictionLibrary.csproj",
+      "projectPath": "C:\\Users\\msred\\Documents\\GitHub\\WindFarmPowerPrediction\\PowerGenerationPrediction\\XTestPowerGenerationPredictionLibrary\\XTestPowerGenerationPredictionLibrary.csproj",
       "packagesPath": "C:\\Users\\msred\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\msred\\source\\repos\\PowerGenerationPrediction\\XTestPowerGenerationPredictionLibrary\\obj\\",
+      "outputPath": "C:\\Users\\msred\\Documents\\GitHub\\WindFarmPowerPrediction\\PowerGenerationPrediction\\XTestPowerGenerationPredictionLibrary\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

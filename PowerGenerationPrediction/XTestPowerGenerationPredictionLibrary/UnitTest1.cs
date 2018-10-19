@@ -1,5 +1,6 @@
 using System;
 using Xunit;
+using PowerGenerationPredictionLibrary;
 
 namespace XTestPowerGenerationPredictionLibrary
 {
@@ -8,7 +9,7 @@ namespace XTestPowerGenerationPredictionLibrary
         [Fact]
         public void Test1()
         {
-
+            
         }
     }
 }

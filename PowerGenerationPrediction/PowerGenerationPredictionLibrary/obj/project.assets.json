@@ -687,11 +687,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\msred\\source\\repos\\PowerGenerationPrediction\\PowerGenerationPredictionLibrary\\PowerGenerationPredictionLibrary.csproj",
+      "projectUniqueName": "C:\\Users\\msred\\Documents\\GitHub\\WindFarmPowerPrediction\\PowerGenerationPrediction\\PowerGenerationPredictionLibrary\\PowerGenerationPredictionLibrary.csproj",
       "projectName": "PowerGenerationPredictionLibrary",
-      "projectPath": "C:\\Users\\msred\\source\\repos\\PowerGenerationPrediction\\PowerGenerationPredictionLibrary\\PowerGenerationPredictionLibrary.csproj",
+      "projectPath": "C:\\Users\\msred\\Documents\\GitHub\\WindFarmPowerPrediction\\PowerGenerationPrediction\\PowerGenerationPredictionLibrary\\PowerGenerationPredictionLibrary.csproj",
       "packagesPath": "C:\\Users\\msred\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\msred\\source\\repos\\PowerGenerationPrediction\\PowerGenerationPredictionLibrary\\obj\\",
+      "outputPath": "C:\\Users\\msred\\Documents\\GitHub\\WindFarmPowerPrediction\\PowerGenerationPrediction\\PowerGenerationPredictionLibrary\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

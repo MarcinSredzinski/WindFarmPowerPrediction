@@ -10,7 +10,8 @@
         "dependencies": {
           "Microsoft.NET.Test.Sdk": "15.8.0",
           "xunit": "2.3.1",
-          "xunit.runner.visualstudio": "2.3.1"
+          "xunit.runner.visualstudio": "2.3.1",
+          "PowerGenerationPredictionLibrary": "1.0.0.0"
         },
         "runtime": {
           "XTestPowerGenerationPredictionLibrary.dll": {}
@@ -1052,6 +1053,14 @@
         "dependencies": {
           "Microsoft.NET.Test.Sdk": "15.8.0"
         }
+      },
+      "PowerGenerationPredictionLibrary/1.0.0.0": {
+        "runtime": {
+          "PowerGenerationPredictionLibrary.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -1592,6 +1601,11 @@
       "sha512": "sha512-B+RtW4dyBquEyjSAFyV5RMifaOZOirDwlzcIq2DNVGo1gzJS8PAPu5S+2y1n6ZgEMWbpqJf9TkZ55+X6FLdy3A==",
       "path": "xunit.runner.visualstudio/2.3.1",
       "hashPath": "xunit.runner.visualstudio.2.3.1.nupkg.sha512"
+    },
+    "PowerGenerationPredictionLibrary/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }
