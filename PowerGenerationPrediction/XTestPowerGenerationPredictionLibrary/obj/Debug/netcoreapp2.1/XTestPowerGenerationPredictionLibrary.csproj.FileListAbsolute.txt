@@ -1,0 +1,14 @@
+C:\Users\msred\source\repos\PowerGenerationPrediction\XTestPowerGenerationPredictionLibrary\bin\Debug\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\msred\source\repos\PowerGenerationPrediction\XTestPowerGenerationPredictionLibrary\bin\Debug\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\msred\source\repos\PowerGenerationPrediction\XTestPowerGenerationPredictionLibrary\bin\Debug\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll
+C:\Users\msred\source\repos\PowerGenerationPrediction\XTestPowerGenerationPredictionLibrary\bin\Debug\netcoreapp2.1\XTestPowerGenerationPredictionLibrary.deps.json
+C:\Users\msred\source\repos\PowerGenerationPrediction\XTestPowerGenerationPredictionLibrary\bin\Debug\netcoreapp2.1\XTestPowerGenerationPredictionLibrary.runtimeconfig.json
+C:\Users\msred\source\repos\PowerGenerationPrediction\XTestPowerGenerationPredictionLibrary\bin\Debug\netcoreapp2.1\XTestPowerGenerationPredictionLibrary.runtimeconfig.dev.json
+C:\Users\msred\source\repos\PowerGenerationPrediction\XTestPowerGenerationPredictionLibrary\bin\Debug\netcoreapp2.1\XTestPowerGenerationPredictionLibrary.dll
+C:\Users\msred\source\repos\PowerGenerationPrediction\XTestPowerGenerationPredictionLibrary\bin\Debug\netcoreapp2.1\XTestPowerGenerationPredictionLibrary.pdb
+C:\Users\msred\source\repos\PowerGenerationPrediction\XTestPowerGenerationPredictionLibrary\obj\Debug\netcoreapp2.1\XTestPowerGenerationPredictionLibrary.csprojAssemblyReference.cache
+C:\Users\msred\source\repos\PowerGenerationPrediction\XTestPowerGenerationPredictionLibrary\obj\Debug\netcoreapp2.1\XTestPowerGenerationPredictionLibrary.csproj.CoreCompileInputs.cache
+C:\Users\msred\source\repos\PowerGenerationPrediction\XTestPowerGenerationPredictionLibrary\obj\Debug\netcoreapp2.1\XTestPowerGenerationPredictionLibrary.AssemblyInfoInputs.cache
+C:\Users\msred\source\repos\PowerGenerationPrediction\XTestPowerGenerationPredictionLibrary\obj\Debug\netcoreapp2.1\XTestPowerGenerationPredictionLibrary.AssemblyInfo.cs
+C:\Users\msred\source\repos\PowerGenerationPrediction\XTestPowerGenerationPredictionLibrary\obj\Debug\netcoreapp2.1\XTestPowerGenerationPredictionLibrary.dll
+C:\Users\msred\source\repos\PowerGenerationPrediction\XTestPowerGenerationPredictionLibrary\obj\Debug\netcoreapp2.1\XTestPowerGenerationPredictionLibrary.pdb
