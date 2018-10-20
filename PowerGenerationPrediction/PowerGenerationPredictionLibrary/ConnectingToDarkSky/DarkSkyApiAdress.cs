@@ -35,6 +35,7 @@ namespace PowerGenerationPredictionLibrary
             string longtitudeWithCommas = _longtitude.ToString().Replace(',', '.');
             string adress = $"{baseAdress}{_apiKey}/{latitudeWithCommas},{longtitudeWithCommas}?{extend}&units={unit}";
             return adress;
-        }
+        }        
+
     }
 }
