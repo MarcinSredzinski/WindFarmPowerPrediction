@@ -17,7 +17,6 @@ namespace XTestPowerGenerationPredictionLibrary.DarkSkyWeather
             DateTime actual = UnixTimeStamp.ConvertUnixTimeStampToDateTime(unixTime);
             //assert
             Assert.Equal(expected, actual);
-
         }
     }
 }

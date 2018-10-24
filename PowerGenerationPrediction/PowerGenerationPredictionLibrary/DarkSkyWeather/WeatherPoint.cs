@@ -9,7 +9,7 @@ namespace PowerGenerationPredictionLibrary.DarkSkyWeather
     {
         [JsonProperty(PropertyName = "time")]
         internal long TimeUnix { get; set; }
-       // public DateTimeOffset DateTime => UnixTimeStamp.UnixTimeStampToDateTime(TimeUnix);
+        public DateTimeOffset DateTime => UnixTimeStamp.ConvertUnixTimeStampToDateTime(TimeUnix);
 
         [JsonProperty(PropertyName = "humidity")]
         public double? Humidity { get; set; }
