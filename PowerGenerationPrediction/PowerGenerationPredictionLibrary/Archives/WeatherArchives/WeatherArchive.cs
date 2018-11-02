@@ -8,26 +8,24 @@ namespace PowerGenerationPredictionLibrary.Archives.WeatherArchives
     {
         protected WeatherArchive(Forecasts.ForcastsInterfaces.IWeatherForecast forecast)
         {
-            string name = PrepareArchiveName(forecast.ForecastName);
+            string name = PrepareArchiveName(forecast.ForecastSourceName);
             string archivePath = Path.Combine(PrepareArchivePath(), name);
             System.IO.Directory.CreateDirectory(archivePath);
         }
         public string PrepareArchiveName(string weatherSource)
         {
-            string archiveName = DateTime.Now.Year + weatherSource;
-            return archiveName;
+            return DateTime.Now.Year + weatherSource;
         }
         //todo get user archive or set default on desktop
         private string PrepareArchivePath()
         {
-            string defaultArchivePath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-          //  string archivePath = @"C:\C:\Users\msred\Documents\GitHub\WindFarmPowerPrediction\PowerGenerationPrediction\archive";
-            return defaultArchivePath;
+            //  string archivePath = @"C:\C:\Users\msred\Documents\GitHub\WindFarmPowerPrediction\PowerGenerationPrediction\archive";
+            return  Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+
         }
         private bool CheckIfArchiveExists(string archivePath)
         {
-            bool archiveExists = (File.Exists(archivePath)) ? true : false;
-            return archiveExists;
+            return (File.Exists(archivePath));            
         }
     }
 }

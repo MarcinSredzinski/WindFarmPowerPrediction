@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PowerGenerationPredictionLibrary.PowerPlantModels.Parts;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -8,6 +9,5 @@ namespace PowerGenerationPredictionLibrary.PowerPlantModels
     {
          ILocalization LocalizationOfPowerPlant { get; } 
          int NominalPower { get; }
-         IGenerator PowerPlantGenerator { get; }
     }
 }

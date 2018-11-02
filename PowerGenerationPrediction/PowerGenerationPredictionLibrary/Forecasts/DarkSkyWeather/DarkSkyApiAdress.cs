@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace PowerGenerationPredictionLibrary
+namespace PowerGenerationPredictionLibrary.Forecasts.DarkSkyWeather
 {
     public class DarkSkyApiAdress
     {
@@ -31,11 +31,16 @@ namespace PowerGenerationPredictionLibrary
         /// <returns> </returns>
         public string GenerateAdress()
         {
-            string latitudeWithCommas = _latitude.ToString().Replace(',', '.');
-            string longtitudeWithCommas = _longtitude.ToString().Replace(',', '.');
+            string latitudeWithCommas = ReplaceDotsWithCommas(_latitude);
+            string longtitudeWithCommas = ReplaceDotsWithCommas(_longtitude);
             string adress = $"{baseAdress}{_apiKey}/{latitudeWithCommas},{longtitudeWithCommas}?{extend}&units={unit}";
             return adress;
-        }        
+        }
+
+        private string ReplaceDotsWithCommas(double doubleValue)
+        {
+            return doubleValue.ToString().Replace(',', '.');
+        }
 
     }
 }

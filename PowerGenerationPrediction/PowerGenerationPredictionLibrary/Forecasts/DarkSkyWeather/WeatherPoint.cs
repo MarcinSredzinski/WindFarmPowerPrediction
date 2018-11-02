@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Newtonsoft.Json;
 
-namespace PowerGenerationPredictionLibrary.DarkSkyWeather
+namespace PowerGenerationPredictionLibrary.Forecasts.DarkSkyWeather
 {
     class WeatherPoint
     {

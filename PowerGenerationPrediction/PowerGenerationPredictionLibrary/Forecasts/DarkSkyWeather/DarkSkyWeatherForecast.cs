@@ -16,6 +16,8 @@ namespace PowerGenerationPredictionLibrary.Forecasts.DarkSkyWeather
 
 
         public ArrayList WeatherForecast => throw new NotImplementedException();
+
+        public ILocalization Localization { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         //GetForecast(ApiAddress)
 
     }
