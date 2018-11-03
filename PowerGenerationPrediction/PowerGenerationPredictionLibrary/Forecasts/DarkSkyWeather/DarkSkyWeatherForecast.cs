@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 using PowerGenerationPredictionLibrary.Forecasts.ForcastsInterfaces;
+using Newtonsoft.Json;
+using System.Net;
 
 namespace PowerGenerationPredictionLibrary.Forecasts.DarkSkyWeather
 {
@@ -18,7 +20,16 @@ namespace PowerGenerationPredictionLibrary.Forecasts.DarkSkyWeather
         public ArrayList WeatherForecast => throw new NotImplementedException();
 
         public ILocalization Localization { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        //GetForecast(ApiAddress)
+        public DSWeather GetForecast(ForecastsInterfaces.IApiAddress apiAddress)
+        {
+            DSWeather weather = new DSWeather();
+            string weatherJson = new WebClient().DownloadString(apiAddress.GenerateAdress());
+            weather = JsonConvert.DeserializeObject<DSWeather>(weatherJson);
+            return weather;
+        }
 
+        public void SaveServerResponse()
+        {
+        }
     }
 }

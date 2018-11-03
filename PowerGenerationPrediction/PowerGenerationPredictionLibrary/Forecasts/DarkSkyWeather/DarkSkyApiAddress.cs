@@ -4,7 +4,7 @@ using System.Text;
 
 namespace PowerGenerationPredictionLibrary.Forecasts.DarkSkyWeather
 {
-    public class DarkSkyApiAdress
+    public class DarkSkyApiAddress:Forecasts.ForecastsInterfaces.IApiAddress
     {
         private string baseAdress = "https://api.darksky.net/forecast/";
         private double _longtitude;
@@ -19,7 +19,7 @@ namespace PowerGenerationPredictionLibrary.Forecasts.DarkSkyWeather
         /// <param name="longtitude">Is geographical longtitude</param>
         /// <param name="latitude">Is geographical latitude</param>
         /// <param name="apiKey">Must consist of valid Dark Sky api key</param>
-        public DarkSkyApiAdress(double longtitude, double latitude, long apiKey)
+        public DarkSkyApiAddress(double longtitude, double latitude, long apiKey)
         {
             _longtitude = longtitude;
             _latitude = latitude;
