@@ -17,9 +17,16 @@ namespace PowerGenerationPredictionLibrary.Forecasts.DarkSkyWeather
         public string ForecastSourceName { get { return "DarkSky"; } }
 
 
-        public ArrayList WeatherForecast => throw new NotImplementedException();
+        public ArrayList WeatherForecast()
+        {
+            ArrayList arrayList = new ArrayList();
+            return arrayList;
+                
+        }
 
         public ILocalization Localization { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+
+
         public DSWeather GetForecast(ForecastsInterfaces.IApiAddress apiAddress)
         {
             DSWeather weather = new DSWeather();
