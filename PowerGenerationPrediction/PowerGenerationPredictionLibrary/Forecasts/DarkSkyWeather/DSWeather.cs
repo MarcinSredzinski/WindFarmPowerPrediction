@@ -7,17 +7,17 @@ namespace PowerGenerationPredictionLibrary.Forecasts.DarkSkyWeather
 {
     public class DSWeather
     {
-        public double? ApparentTemperature { get; set; }
+        internal double? ApparentTemperature { get; set; }
         [JsonProperty(PropertyName = "currently")]
-        public WeatherPoint Teraz { get; set; }
+        internal DSWeatherPoint Teraz { get; set; }
         [JsonProperty(PropertyName = "daily")]
-        public List<WeatherPoint> Daily { get; set; }
+        internal List<DSWeatherPoint> Daily { get; set; }
         //public WeatherBlock Dzien { get; set; }
         [JsonProperty(PropertyName = "hourly")]
-        public List<WeatherPoint> Hourly { get; set; }
+        internal List<DSWeatherPoint> Hourly { get; set; }
         // public WeatherBlock CoGodzine { get; set; }
         [JsonProperty(PropertyName = "minutely")]
-        public List<WeatherPoint> Minutely { get; set; }
+        internal List<DSWeatherPoint> Minutely { get; set; }
         //public WeatherBlock CoMinute { get; set; }
     }
 }

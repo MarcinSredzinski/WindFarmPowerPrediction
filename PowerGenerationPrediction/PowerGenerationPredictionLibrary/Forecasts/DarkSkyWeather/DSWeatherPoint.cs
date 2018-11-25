@@ -5,7 +5,7 @@ using Newtonsoft.Json;
 
 namespace PowerGenerationPredictionLibrary.Forecasts.DarkSkyWeather
 {
-    class WeatherPoint
+    class DSWeatherPoint
     {
         [JsonProperty(PropertyName = "time")]
         internal long TimeUnix { get; set; }

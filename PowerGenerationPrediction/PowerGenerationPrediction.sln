@@ -3,9 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2041
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PowerGenerationPredictionLibrary", "PowerGenerationPredictionLibrary\PowerGenerationPredictionLibrary.csproj", "{1140C7B4-EA04-4FF7-B42E-73694BB4C4A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PowerGenerationPredictionLibrary", "PowerGenerationPredictionLibrary\PowerGenerationPredictionLibrary.csproj", "{1140C7B4-EA04-4FF7-B42E-73694BB4C4A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XTestPowerGenerationPredictionLibrary", "XTestPowerGenerationPredictionLibrary\XTestPowerGenerationPredictionLibrary.csproj", "{921CE042-8D53-4B15-889A-97ABEFB36D0C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XTestPowerGenerationPredictionLibrary", "XTestPowerGenerationPredictionLibrary\XTestPowerGenerationPredictionLibrary.csproj", "{921CE042-8D53-4B15-889A-97ABEFB36D0C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1140C7B4-EA04-4FF7-B42E-73694BB4C4A7} = {1140C7B4-EA04-4FF7-B42E-73694BB4C4A7}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

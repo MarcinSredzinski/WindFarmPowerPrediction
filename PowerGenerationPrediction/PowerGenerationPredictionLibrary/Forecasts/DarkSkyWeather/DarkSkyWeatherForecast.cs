@@ -5,38 +5,35 @@ using System.Text;
 using PowerGenerationPredictionLibrary.Forecasts.ForcastsInterfaces;
 using Newtonsoft.Json;
 using System.Net;
+using System.IO;
 
 namespace PowerGenerationPredictionLibrary.Forecasts.DarkSkyWeather
 {
     public class DarkSkyWeatherForecast : IWeatherForecast
     {
+        string _weatherJson;
         public DarkSkyWeatherForecast()
         {
 
         }
-        public string ForecastSourceName { get { return "DarkSky"; } }
+        public string ForecastSourceName { get { return "DarkSky"; } }    
 
+        public ILocalization Localization { get; set; }
 
-        public ArrayList WeatherForecast()
-        {
-            ArrayList arrayList = new ArrayList();
-            return arrayList;
-                
-        }
-
-        public ILocalization Localization { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-
-
-        public DSWeather GetForecast(ForecastsInterfaces.IApiAddress apiAddress)
-        {
+        //todo really bad practice, change is needed in near future! 
+        //Possible solution to this problem may be creating interface representing potential response. 
+        public object GetForecast(ForecastsInterfaces.IApiAddress apiAddress)
+        {           
             DSWeather weather = new DSWeather();
-            string weatherJson = new WebClient().DownloadString(apiAddress.GenerateAdress());
-            weather = JsonConvert.DeserializeObject<DSWeather>(weatherJson);
+           
+            _weatherJson = new WebClient().DownloadString(apiAddress.GenerateAdress());
+            weather = JsonConvert.DeserializeObject<DSWeather>(_weatherJson);
             return weather;
         }
 
-        public void SaveServerResponse()
+        public void Save(string archivePath)
         {
+            File.WriteAllTextAsync(archivePath, _weatherJson);
         }
     }
 }
