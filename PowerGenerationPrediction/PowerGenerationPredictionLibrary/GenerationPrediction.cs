@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using PowerGenerationPredictionLibrary.PowerPlantModels;
-using PowerGenerationPredictionLibrary.Forecasts.ForcastsInterfaces;
+using PowerGenerationPredictionLibrary.Forecasts.ForecastsInterfaces;
 
 namespace PowerGenerationPredictionLibrary
 {

@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Text;
-using PowerGenerationPredictionLibrary.Forecasts.ForcastsInterfaces;
+using PowerGenerationPredictionLibrary.Forecasts.ForecastsInterfaces;
 using Newtonsoft.Json;
 using System.Net;
 using System.IO;

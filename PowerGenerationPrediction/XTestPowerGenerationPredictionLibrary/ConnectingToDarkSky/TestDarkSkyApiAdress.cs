@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using Xunit;
-using PowerGenerationPredictionLibrary;
+using PowerGenerationPredictionLibrary.Forecasts.DarkSkyWeather;
 
 
 namespace XTestPowerGenerationPredictionLibrary.ConnectingToDarkSky
@@ -15,7 +15,7 @@ namespace XTestPowerGenerationPredictionLibrary.ConnectingToDarkSky
             double longtitude = 1.1;
             double latitude = 2.2;
             long key = 44;
-            DarkSkyApiAdress tworzenieAdresu = new DarkSkyApiAdress(longtitude, latitude, key);
+            DarkSkyApiAddress tworzenieAdresu = new DarkSkyApiAddress(longtitude, latitude, key);
             string expected = "https://api.darksky.net/forecast/44/2.2,1.1?extend=hourly&units=si";
 
             string actual = tworzenieAdresu.GenerateAdress();

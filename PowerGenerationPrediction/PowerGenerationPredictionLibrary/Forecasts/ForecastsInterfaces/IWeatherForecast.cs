@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-namespace PowerGenerationPredictionLibrary.Forecasts.ForcastsInterfaces
+namespace PowerGenerationPredictionLibrary.Forecasts.ForecastsInterfaces
 {
     public interface IWeatherForecast
     {

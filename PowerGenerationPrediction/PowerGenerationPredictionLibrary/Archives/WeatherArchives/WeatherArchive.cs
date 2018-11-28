@@ -6,7 +6,7 @@ namespace PowerGenerationPredictionLibrary.Archives.WeatherArchives
 {
     public class WeatherArchive
     {
-        protected WeatherArchive(Forecasts.ForcastsInterfaces.IWeatherForecast forecast)
+        protected WeatherArchive(Forecasts.ForecastsInterfaces.IWeatherForecast forecast)
         {
             string name = PrepareArchiveName(forecast.ForecastSourceName);
             string archivePath = Path.Combine(PrepareArchivePath(), name);
