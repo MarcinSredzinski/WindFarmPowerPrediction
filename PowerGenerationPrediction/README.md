@@ -14,8 +14,8 @@ better meet best coding practices and design patterns.
 
 ## Current status
 
-Application is still in its infancy, yet slowly but continously growing. Currently works on connecting to weather forecasts 
-api are conducted. Next 
+Application is still in its infancy, yet slowly and continously growing. Currently work on connecting to weather forecasts 
+api is conducted. Next 
 issues will focus on different ways to model all kinds of wind and solar based energy sources, sucha as solar panels and wind 
 farms.  
 
