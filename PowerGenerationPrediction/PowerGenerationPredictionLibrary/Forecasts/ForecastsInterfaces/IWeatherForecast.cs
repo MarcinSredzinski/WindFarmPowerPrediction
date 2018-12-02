@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 namespace PowerGenerationPredictionLibrary.Forecasts.ForecastsInterfaces
 {
-    public interface IWeatherForecast<T>
+    public interface IWeatherForecast<T> where T: class, new()
     {
         string ForecastSourceName { get; }
         ILocalization Localization { get; set; }

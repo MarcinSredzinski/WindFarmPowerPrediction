@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using System.Text;
 using System.IO;
+using PowerGenerationPredictionLibrary.Forecasts.ForecastsInterfaces;
 namespace PowerGenerationPredictionLibrary.Archives.WeatherArchives
 {
-    public class WeatherArchive
+    public class WeatherArchive<T> where T:class, new()
     {
-        protected WeatherArchive(Forecasts.ForecastsInterfaces.IWeatherForecast forecast)
+        protected WeatherArchive(IWeatherForecast<T> forecast)
         {
             string name = PrepareArchiveName(forecast.ForecastSourceName);
             string archivePath = Path.Combine(PrepareArchivePath(), name);

@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using PowerGenerationPredictionLibrary.Forecasts.ForecastsInterfaces;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -7,15 +8,15 @@ using System.Text;
 
 namespace PowerGenerationPredictionLibrary.Forecasts
 {
-    class WeatherForecast<T> : ForecastsInterfaces.IWeatherForecast<T>
+    class WeatherForecast<T> : IWeatherForecast<T> where T : class, new()
     {
-        string _weatherJson;
-      
+        string _weatherJson;       
+
         public string ForecastSourceName => typeof(T).Name;
 
         public ILocalization Localization { get; set; }
         
-        public T GetForecast(ForecastsInterfaces.IApiAddress apiAddress)
+        public T GetForecast(IApiAddress apiAddress)
         {
             T weather;
             _weatherJson = new WebClient().DownloadString(apiAddress.GenerateAdress());
@@ -23,6 +24,7 @@ namespace PowerGenerationPredictionLibrary.Forecasts
             return weather;
         }
 
+     
         public void Save(string archivePath)
         {
             File.WriteAllTextAsync(archivePath, _weatherJson);

@@ -8,7 +8,7 @@ namespace PowerGenerationPredictionLibrary.Forecasts.DarkSkyWeather
     {
         public DarkSkyApiAddress CreateDarkSkyApiAdress(double longtitude, double latitude, long apiKey)=> new DarkSkyApiAddress(longtitude, latitude, apiKey);
         
-        public IWeatherForecast CreatedarkSkyWeatherForecast()=> new DarkSkyWeatherForecast();
+        public IWeatherForecast<DSWeather> CreatedarkSkyWeatherForecast()=> new WeatherForecast<DSWeather>();
         
         public DSWeather CreateDSWeather() => new DSWeather();
         

@@ -6,11 +6,12 @@ using PowerGenerationPredictionLibrary.Forecasts.ForecastsInterfaces;
 
 namespace PowerGenerationPredictionLibrary
 {
-    public  class GenerationPrediction
+    public  class GenerationPrediction<T> where T:class, new()
     {
+        //todo bad approach - this construction forces caller to know what kind of response is awaited instead of knowing which forecast API to use!
         private IPowerPlantModel _powerPlantModel;
-        private IWeatherForecast _weatherForecast;
-        public GenerationPrediction(IPowerPlantModel powerPlantModel, IWeatherForecast weatherForecast)
+        private IWeatherForecast<T> _weatherForecast;
+        public GenerationPrediction(IPowerPlantModel powerPlantModel, IWeatherForecast<T> weatherForecast)
         {
             _powerPlantModel = powerPlantModel;
             _weatherForecast = weatherForecast;

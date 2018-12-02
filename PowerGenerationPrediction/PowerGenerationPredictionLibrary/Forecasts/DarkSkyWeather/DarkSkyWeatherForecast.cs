@@ -9,7 +9,7 @@ using System.IO;
 
 namespace PowerGenerationPredictionLibrary.Forecasts.DarkSkyWeather
 {
-    public class DarkSkyWeatherForecast<T> : IWeatherForecast<T>
+    public class DarkSkyWeatherForecast<T> //: IWeatherForecast<T>
     {
         //string _weatherJson;
         //public DarkSkyWeatherForecast()
